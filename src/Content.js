@@ -3,7 +3,9 @@ const Content = () =>
     return(
         
         <main>
-        <h1>Content</h1>
+        <figure className="text-center">
+        <blockquote className="blockquote">Content</blockquote>
+        </figure>
         </main>
 
     );
