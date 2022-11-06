@@ -1,7 +1,5 @@
-import { useState } from "react";
-
-const DriverProfile = () => {
-    const [drivers , setDrivers] = useState([{
+const DriverProfile = [
+    {
         id: 1,
         fullName :"Dhanith Lakjaya",
         branch : "Kandy",
@@ -15,17 +13,8 @@ const DriverProfile = () => {
         gender: "male",
         teamName: "A"
     },
-    ]
-    );
-    return (
-        <main>
-            {
-                drivers.map((driver) => (
-                    <p>{driver.fullName}</p>
-                ))
-            }
-        </main>
-    );
-}
+    
+    n
+];
 
 export default DriverProfile;
