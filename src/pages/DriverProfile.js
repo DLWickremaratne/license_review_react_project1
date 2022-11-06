@@ -14,7 +14,7 @@ const DriverProfile = [
         teamName: "A"
     },
     
-    n
+    
 ];
 
 export default DriverProfile;
