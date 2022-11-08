@@ -1,20 +1,17 @@
-const DriverProfile = [
-    {
-        id: 1,
-        fullName :"Dhanith Lakjaya",
-        branch : "Kandy",
-        gender: "male",
-        teamName: "A"
-    },
-    {
-        id: 1,
-        fullName :"Pradeep",
-        branch : "Kandy",
-        gender: "male",
-        teamName: "A"
-    },
+import { useParams } from "react-router-dom";
+import drivers from "./drivers-content";
+//useParams hook
+const DriversPro = () => {
+    const { driverId } = useParams();
     
-    
-];
+    //driver id property of params 
+    //const driverId = params.driverId;
+    //js builtin find function
 
-export default DriverProfile;
+    const driver = drivers.find(driver => driver.id === driverId);
+    return (
+        <h1>This is the profile page for the profile id: { driverId }!</h1>
+    );
+}
+
+export default DriversPro;
