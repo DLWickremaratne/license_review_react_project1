@@ -1,16 +1,24 @@
 import { useParams } from "react-router-dom";
 import drivers from "./drivers-content";
+
 //useParams hook
 const DriversPro = () => {
     const { driverId } = useParams();
-    
+
     //driver id property of params 
     //const driverId = params.driverId;
     //js builtin find function
 
-    const driver = drivers.find(driver => driver.id === driverId);
+    const driver = drivers.find(driver => driver.fullName === driverId);
+    
     return (
-        <h1>This is the profile page for the profile id: { driverId }!</h1>
+        <>
+        <h1> {driver.fullName} </h1>
+        <h1> {driver.branch} </h1>
+        <h2> {driver.gender} </h2>
+        <h2> {driver.teamName} </h2>
+
+        </>
     );
 }
 
