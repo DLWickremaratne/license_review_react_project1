@@ -4,14 +4,14 @@ const drivers = [
         fullName :"Dhanith Lakjaya",
         branch : "Kandy",
         gender: "male",
-        teamName: "A"
+        teamName: "Team A"
     },
     {
         id:2,
         fullName :"Pradeep",
         branch : "Kandy",
         gender: "male",
-        teamName: "A"
+        teamName: "Team A"
     },
     
     
