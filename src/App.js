@@ -12,14 +12,16 @@ import NavBar from './NavBar';
 function App() {
   return (
     <BrowserRouter>
+    <div className="App">
     < NavBar />
-    <div>
+    <div id="page-body">
       <Routes>
         <Route path='/' element={<Content />} />
         <Route path='/drivers' element={<DriversList />} />
         <Route path='/drivers/:driverId' element={<DriverProfile />} />
 
       </Routes>
+      </div>
     </div>
     </BrowserRouter>
   );
