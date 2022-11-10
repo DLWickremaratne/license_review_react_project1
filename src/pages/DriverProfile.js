@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import drivers from "./drivers-content";
+import NotFoundPage from "../NotFoundPage";
 
 //useParams hook
 const DriversPro = () => {
@@ -10,6 +11,10 @@ const DriversPro = () => {
     //js builtin find function
 
     const driver = drivers.find(driver => driver.fullName === driverId);
+
+    if (!driver) {
+        return <NotFoundPage />
+    }
     
     return (
         <>
