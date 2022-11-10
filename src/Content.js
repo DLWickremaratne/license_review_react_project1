@@ -2,11 +2,19 @@ const Content = () =>
 {
     return(
         
-        <main>
-        <figure className="text-center">
-        <blockquote className="blockquote">Content</blockquote>
-        </figure>
-        </main>
+        <>
+        <h1>Hello, welcome to D.L.R.P!</h1>
+        <p>
+            Welcome to drivers profile reveiw web! 
+            
+        </p>
+        <p>
+            paragaraph 1
+        </p>
+        <p>
+            paragaraph 2
+        </p>
+        </>
 
     );
 }
